@@ -9,6 +9,7 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using AndroidX.AppCompat.App;
+using AndroidX.Core.View;
 using System;
 using System.Collections.Generic;
 
@@ -30,7 +31,7 @@ namespace App6
             SetContentView(Resource.Layout.activity_main);
             //this.Window.SetFlags(WindowManagerFlags.Fullscreen,WindowManagerFlags.Fullscreen);
             View view = this.Window.DecorView;
-            var d = view.SystemGestureExclusionRects;
+            //var d = view.SystemGestureExclusionRects;
             //Intent launchIntent = PackageManager.GetLaunchIntentForPackage("com.android.chrome");
             //StartActivity(launchIntent);
             //ImageView chromeIcon = (ImageView)FindViewById(Resource.Id.chromeButton);
@@ -80,13 +81,19 @@ namespace App6
                 bool changedCanvas, int left, int top, int right, int bottom)
         {
             // Update rect bounds and the exclusionRects list
-            this.Window.DecorView.SystemGestureExclusionRects=(exclusionRects);
+            if ((int)Build.VERSION.SdkInt >= 29 && exclusionRects != null)
+            {
+                ViewCompat.SetSystemGestureExclusionRects(this.Window.DecorView, exclusionRects);
+            }
         }
 
         public void onDraw(Canvas canvas)
         {
             // Update rect bounds and the exclusionRects list
-            this.Window.DecorView.SystemGestureExclusionRects = exclusionRects;
+            if ((int)Build.VERSION.SdkInt >= 29 && exclusionRects != null)
+            {
+                ViewCompat.SetSystemGestureExclusionRects(this.Window.DecorView, exclusionRects);
+            }
         }
 
         public WindowInsets OnApplyWindowInsets(View v, WindowInsets insets)
