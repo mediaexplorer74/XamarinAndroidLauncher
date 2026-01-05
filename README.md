@@ -6,11 +6,11 @@ XamarinAndroidLauncher ("App6" codename) is my Android Launcher "template" (mayb
 
 ![](/Images/sshot01.png)
 
-HONOR 400 Tweaked: "Windows10Mobile" Intant-On/Always-On Watch :)
+_HONOR 400 Tweaked: "Windows10Mobile" Isntant-On/Always-On Watch_
 
 ![](/Images/sshot02.png)
 
-Simplest Launcher (only App list at now..)
+_Simplest Launcher (only App list at now)_
 
 
 
