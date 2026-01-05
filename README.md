@@ -21,7 +21,7 @@ _Simplest Launcher (only App list at now)_
 Error "'View' does not contain a definition for 'SystemGestureExclusionRects' and no accessible extension method 'SystemGestureExclusionRects' accepting a first argument of type 'View' could be found (are you missing a using directive or an assembly reference?) " successfully fixed by some c# code patching & "appcompat" packages upgrade.
 
 ## Install Progress
-I successfully enabled DvMode on my new "droidphone" HONOR 400. So, XamarinAndroidLauncher apk installation (.apk) fixed.
+I successfully enabled Dev Mode on my new "droidphone" HONOR 400. So, XamarinAndroidLauncher apk installation (.apk) fixed.
 
 # Dev Tools
 - Visual Studio 2022 / 2026
