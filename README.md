@@ -1,17 +1,30 @@
 # XamarinAndroidLauncher - main branch
 XamarinAndroidLauncher ("App6" codename) is my Android Launcher "template" (maybe, one day it will be some WP/W10M-like Launcher... who knows?))) 
 
+## Screenshots
+
+
+![](/Images/sshot01.png)
+
+HONOR 400 Tweaked: "Windows10Mobile" Intant-On/Always-On Watch :)
+
+![](/Images/sshot02.png)
+
+Simplest Launcher (only App list at now..)
+
+
+
 ## Status 
-- Draft
+- Draft (No Live Tiles, etc.)
 
 ## Build Progress
-Error "'View' does not contain a definition for 'SystemGestureExclusionRects' and no accessible extension method 'SystemGestureExclusionRects' accepting a first argument of type 'View' could be found (are you missing a using directive or an assembly reference?) " fixed.
+Error "'View' does not contain a definition for 'SystemGestureExclusionRects' and no accessible extension method 'SystemGestureExclusionRects' accepting a first argument of type 'View' could be found (are you missing a using directive or an assembly reference?) " successfully fixed by some c# code patching & "appcompat" packages upgrade.
 
 ## Install Progress
-My new "droidphone" HONOR 400 rejected App6... idk why.
+I successfully enabled DvMode on my new "droidphone" HONOR 400. So, XamarinAndroidLauncher apk installation (.apk) fixed.
 
 # Dev Tools
-- Visual Studio 2022
+- Visual Studio 2022 / 2026
 - C#
 - Also, make sure to install the following NuGet packages:
 ```   
@@ -20,7 +33,7 @@ My new "droidphone" HONOR 400 rejected App6... idk why.
 ```  
 
 ## References
-? (deleted GitHub account)
+https://github.com/com.binary (deleted GitHub account)
 
 ## ..
 As is. No support. RnD only. DIY.
